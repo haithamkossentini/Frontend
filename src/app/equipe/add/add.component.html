@@ -1,0 +1,13 @@
+<h3 align="center">Add new Club</h3>
+
+<form #equipeForm="ngForm" (submit)="handleAddEquipe(equipeForm)">
+  <div class="form-group">
+    <label for="name">Club Name</label>
+    <input name="name" ngModel class="form-control" required>
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <input name="country" ngModel class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>

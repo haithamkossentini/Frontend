@@ -1,0 +1,20 @@
+<h3 align="center">List of clubs</h3>
+<table class="table table-hover">
+  <thead class="thead-dark"> 
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let equipe of equipes">
+      <td>{{equipe.name}}</td>
+      <td>{{equipe.country}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteEquipe(equipe)">Supprimer</button>
+        <button class="btn btn-primary" (click)="updateEquipe(equipe)">Modifier</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
